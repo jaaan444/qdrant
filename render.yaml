@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: qdrant
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /collections
+    autoDeploy: false
